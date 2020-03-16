@@ -1,0 +1,91 @@
+:root {
+  --cblack: #0B0C10;
+  --dark-g: #1F2833;
+  --light-g: #C5C6C7;
+  --electric-b: #66FCF1;
+  --marine-b: #45A29E;
+}
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--electric-b);
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navigation */
+.nav {
+ display: flex;
+ justify-content: flex-end;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ background: var(--dark-g);
+ box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.nav-list a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1.0rem
+}
+
+.nav-list a:hover {
+  background: var(--marine-b);
+}
+
+/* END NAVIGATION */
+
+/* WELCOME SCREEN */
+
+#welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient( rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.7) ), url('https://wallpapercave.com/wp/IgouwDQ.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  }
+
+#welcome-section > h1 {
+  color: var(--electric-b);
+}
