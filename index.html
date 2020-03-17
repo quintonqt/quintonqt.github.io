@@ -8,6 +8,10 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 <!-- BEGIN NAV -->
 <nav id=navbar class="nav">
   <ul class="nav-list">
@@ -18,7 +22,10 @@
       <a href="#projects">Projects</a>
     </li>
     <li>
-      <a href="#about">About Me</a>
+      <a href="#about">About</a>
+    </li>
+    <li>
+      <a href="mailto:quinton.tran@duke.edu?Subject=Some%20subject">Contact</a>
     </li>
   </ul>
 </nav>
@@ -28,8 +35,17 @@
 <!-- START HOME -->
 
 <section id="welcome-section" class="welcome-section">
-  <h1>Hi! I'm Quinton, </br>a 
+  <div id="intro">
+  <h1 style="text-align: center;">Hi! I'm Quinton, </br>a 
 software developer.</h1>
+
+
+<div id="button-grid">
+  <a href="#projects"><button class="btn">PROJECTS</button></a>
+  <a href="https://drive.google.com/file/d/1R6urqyq8zkq9EzJKRuSQzVc6Ib7GldK_/view?usp=sharing" target="_blank"><button class="btn">RESUME</button></a>
+</div>
+
+
   </section>
 
 <!-- END HOME -->
@@ -89,6 +105,12 @@ software developer.</h1>
 <section id="about" class="about-section">
   <h2 id="about-header">About Me</h2>
   <p id="about-para">I am an enthusiastic software developer who loves repurposing old technology and exploring the new. When I am free, you might catch me hacking a phone or painting scenery.</p>
+  
+  <div id="icon-container">
+  <a href="https://github.com/quintonqt" target="_blank"><i class="fa fa-github" style="font-size:48px;color:black"></i></a>
+  <a href="https://www.linkedin.com/in/quinton-tran" target="_blank"><i class="fa fa-linkedin-square" style="font-size:48px;color: #0E76A8"></i></a>
+  <a href="mailto:quinton.tran@duke.edu?Subject=Some%20subject"><i class='fas fa-envelope' style='font-size:48px;color:#00539B'></i></a>
+  </div>
   </section>
 <!-- END ABOUT ME -->
 <!-- partial -->
