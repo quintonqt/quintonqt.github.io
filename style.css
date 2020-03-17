@@ -53,6 +53,7 @@ a {
  width: 100%;
  background: var(--cblack);
  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+ z-index: 5;
 }
 
 .nav-list {
