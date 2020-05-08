@@ -169,7 +169,7 @@ a {
   z-index: 5;
 }
 
-#project-frame {
+.project-frame {
   height: 340px;
   width: 100%;
   position: relative;
