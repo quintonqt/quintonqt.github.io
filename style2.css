@@ -1,0 +1,270 @@
+:root {
+  --cblack: #0B0C10;
+  --dark-g: #1F2833;
+  --light-g: #C5C6C7;
+  --electric-b: #66FCF1;
+  --marine-b: #45A29E;
+}
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--electric-b);
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navigation */
+.nav {
+ display: flex;
+ justify-content: flex-end;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ background: var(--cblack);
+ box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+ z-index: 50;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+  list-style: none;
+}
+
+.nav-list a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1.0rem
+}
+
+.nav-list a:hover {
+  background: var(--marine-b);
+}
+
+/* END NAVIGATION */
+
+/* WELCOME SCREEN */
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient( rgba(0, 0, 1.0, 1.0), rgba(0, 0, 1.0, 0.7) ), url('https://wallpapercave.com/wp/IgouwDQ.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  }
+
+h1 {
+  width: 100%;
+  margin: 25% auto 10% auto;
+
+  color: var(--electric-b);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+
+#button-grid {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn {
+  background: transparent;
+  border: 3px solid var(--marine-b);
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 15px;
+  position: relative;
+}
+
+.btn:hover {
+  background-color: var(--marine-b);
+}
+
+/* END WELCOME SCREEN */
+
+/* START PROJECTS */
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+}
+
+.project-section {
+  text-align: center;
+  padding: 8rem 2rem;
+  background: var(--dark-g);
+}
+
+.pro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+.project {
+  background: #808080;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.project:hover {
+  background: var(--marine-b);
+}
+
+.project-frame {
+  height: 340px;
+  width: 100%;
+}
+
+.project-frame img {
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+}
+/* END PROJECTS */
+
+/* START ABOUT ME */
+
+.about-section {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 8rem 2rem;
+  background: var(--light-g);
+}
+
+#about-header {
+  color: var(--cblack);
+}
+
+#about-para {
+  text-align: center;
+  color: var(--cblack);
+  text-align: center;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+#icon-container a{
+  position: relative;
+  top: 50px;
+  padding: 10px;
+}
+
+
+i:hover{
+  transform: scale(1.1);
+}
+
+/* END ABOUT ME */
+
+@media (max-device-width: 1000px) {
+  .nav {
+    justify-content: space-evenly;
+  }
+
+  .nav-list {
+    margin-right: initial;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .nav-list a {
+    font-size: 3.0rem;
+    padding: 2.0rem
+  }
+
+  h1 {
+    margin: 45% auto 20% auto;
+    font-size: 7rem;
+  }
+
+  #button-grid {
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  .btn {
+    border-width: 10px;
+    width: 330px;
+    padding: 40px;
+    font-size: 40px;
+    font-weight: 600;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 15px 30px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  .pro-grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+    grid-gap: 8rem;
+  }
+
+  .project-title {
+    font-size: 3rem;
+  }
+
+  .project {
+    height: 80vh;
+  }
+
+  .project-frame {
+    height: 90%;
+  }
+
+  .project-frame img {
+    height: 95%;
+  }
+
+  #about-header {
+    margin-bottom: 30px;
+  }
+
+  #icon-container {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
+
+/*Create one for mobile*/
